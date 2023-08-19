@@ -130,7 +130,7 @@ def reconstruct_video(args):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_video', type=str, default=str(Path(gdl.__file__).parents[1] / "/assets/data/EMOCA_test_example_data/videos/82-25-854x480_affwild2.mp4"), 
+    parser.add_argument('--input_video', type=str, default=str(Path(gdl.__file__).parents[1] / "data/assets/data/EMOCA_test_example_data/videos/82-25-854x480_affwild2.mp4"), 
         help="Filename of the video for reconstruction.")
     parser.add_argument('--output_folder', type=str, default="video_output", help="Output folder to save the results to.")
     parser.add_argument('--model_name', type=str, default='EMOCA_v2_lr_mse_20', help='Name of the model to use. Currently EMOCA or DECA are available.')
